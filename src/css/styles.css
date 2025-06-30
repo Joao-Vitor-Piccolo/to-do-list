@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 63%;
+}
+
+body{
+    background: #36555c;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;    
+    width: 70vw;
+    height: 80vh;
+
+}
+
+.container main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container header h1{
+    font-size: 6rem;
+    font-family: monospace;
+    color: white;
+}
+
+input{
+    transition: .5s;
+    color: white;
+    background: #2a2a2b;
+    border-radius: 10px;
+    border: none;
+    width: 40rem;
+    height: 4rem;
+}
+
+input:focus{
+    font-size: 1.5rem;
+    width: 40.2rem;
+    height: 4.2rem;
+}
+
+#removerTarefa{
+    transition: .5s;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: none;
+    background-image: url(../../src/assets/imgs/trash_icon.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#removerTarefa:hover{
+    cursor: pointer;
+    width: 4.5rem;
+    height: 4.5rem;
+}
