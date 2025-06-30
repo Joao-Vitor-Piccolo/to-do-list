@@ -1,11 +1,12 @@
 //DECLARAÇÃO DE VARIAVEIS
-
+let inputEl = document.querySelector("input");
+let btnEl = document.querySelector("button");
 let tarefas =[];
 
 //FUNÇÃO PARA VALIDAR CAMPO
 
 const validarCampo=()=>{
- let valida=false;
+ let valida = false;
  if(document.getElementById("task").value =="") valida =true;
  return valida;
 }
@@ -34,7 +35,7 @@ function adicionarTarefa(){
             icon:"success",
             title:"Tarefa Adicionada com Sucesso",
             showConfirmButton:false,
-            timer:1500
+            timer:950
         })
     }
 }
@@ -74,3 +75,6 @@ function removerTarefa(){
     })
 }
 
+inputEl.addEventListener("keypress", (e)=>{
+    if(e.key == "Enter") adicionarTarefa();
+})
