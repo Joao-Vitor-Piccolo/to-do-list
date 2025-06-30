@@ -9,20 +9,24 @@
     <title>Lista Tarefas</title>
 </head>
 <body>
+    <div class="container">
     <header>
-        <h1>LISTA DE TAREFAS</h1>
+        <h1>Take action.</h1>
     </header>
     <main>
         <p>
-            <label for="task">Tarefa:</label>
-            <input type="text" id="task">
+            <label for="task"></label>
+            <input type="text" id="task" placeholder="Insira seu texto">
         </p>
-        <button id="adicionarTarefa" onclick="adicionarTarefa()">Adicionar Tarefa</button>
-        <button id="removerTarefa" onclick="removerTarefa()">Remover Tarefa</button>
 
+        <div id="item">
+            <button id="removerTarefa" onclick="removerTarefa()"></button>
+        </div>
+
+        
         <p id="lista"></p>
     </main>
-
+    </div>
     <!-- JS EXTERNO -->
     <script src="./src/js/main.js"></script>
 </body>
